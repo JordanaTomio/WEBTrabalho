@@ -1,19 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from '@mui/material/Button';
 import {TextField} from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import Button from "@mui/material/Button";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-function App() {
+const Home = () => {
     return (
-        <div class="split left">
-            <div class="centered">
-                <h2 class="preto"> F </h2>
-                <h2 class="preto-claro"> R </h2>
-                <h2 class="cinza-escuro"> U </h2>
-                <h2 class="cinza"> B </h2>
+        <div className="split left">
+            <div className="centered">
+                <h2 className="preto"> F </h2>
+                <h2 className="preto-claro"> R </h2>
+                <h2 className="cinza-escuro"> U </h2>
+                <h2 className="cinza"> B </h2>
 
-                <div class="texto-padrao">
+                <div className="texto-padrao">
                     <h3> Inicie sua sessao. </h3>
                 </div>
 
@@ -40,15 +38,20 @@ function App() {
                     variant={"filled"}
                 />
 
-                <Button variant="contained" size={"large"} endIcon={<ArrowForwardIcon />}>Entrar</Button>
+                <Button
+                    variant="contained"
+                    size={"large"}
+                    endIcon={<ArrowForwardIcon/>}
+                >
+                    Entrar
+                </Button>
 
                 <div className="texto-padrao mini">
                     <h3> Ja possui conta? Clique aqui. </h3>
                 </div>
-
             </div>
         </div>
     );
 }
 
-export default App;
+export default Home;
